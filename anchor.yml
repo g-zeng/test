@@ -8,4 +8,4 @@ steps:
     commands:
       - echo hello
   test2: 
-    <<: *test_step
+    &lt;&lt;: *test_step
