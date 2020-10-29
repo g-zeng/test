@@ -1,0 +1,11 @@
+version: '1.0'
+
+steps:
+  test1: &test_step
+    title: Testing anchors
+    type: freestyle
+    image: alpine:latest
+    commands:
+      - echo hello
+  test2: 
+    <<: *test_step
