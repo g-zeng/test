@@ -1,0 +1,18 @@
+=============================== Coverage summary ===============================
+Statements : 16.88% ( 2633/15596 )
+Branches : 4.29% ( 479/11165 )
+Functions : 9.82% ( 536/5458 )
+Lines : 16.79% ( 2414/14374 )
+================================================================================
+
+after removing all special characters & empty lines using (sed -n 3,6p | sed "s/[#$%*@]//g") it looks like this
+
+Statements : 16.88 ( 2633/15596 )
+Branches : 4.29 ( 479/11165 )
+Functions : 9.82 ( 536/5458 )
+Lines : 16.79 ( 2414/14374 )
+
+On my local machine I was able to store the concatenate text inside a variable by doing:
+
+export COV=$(cat coverage.txt | sed -n 3,6p | sed "s/[#$%*@]//g")
+echo $COV
