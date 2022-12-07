@@ -34,4 +34,3 @@ steps:
       SMTP_PASSWORD: ${{password}}
       SMTP_PORT: "587"
 
-
